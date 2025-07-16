@@ -3,7 +3,7 @@
 {
   imports = [
     ./user/shell/bash.nix
-    .user/app/terminal/ghostty.nix
+    ./user/app/terminal/ghostty.nix
   ];
 
   home.username = "lehmius";
@@ -11,7 +11,7 @@
 
  home.stateVersion = "25.05"; # Please read the comment before changing.
 
-  home.packages = [
+  home.packages = with pkgs; [
    # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
 
