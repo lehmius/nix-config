@@ -3,6 +3,7 @@
 {
   imports = [
     ./user/shell/bash.nix
+    .user/app/terminal/ghostty.nix
   ];
 
   home.username = "lehmius";
