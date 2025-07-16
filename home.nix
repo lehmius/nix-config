@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./user/shell/bash.nix
+  ];
+
   home.username = "lehmius";
   home.homeDirectory = "/home/lehmius";
 
@@ -14,16 +18,6 @@
   
   home.sessionVariables = {
     EDITOR = "nvim";
-  };
-
-  programs.bash = {
-	enable = true;
-	shellAliases = {
-		".." = "cd ..";
-		ll = "ls -l";
-		la = "ls -a";
-		lla = "ls -la";
-	};
   };
 
   programs.home-manager.enable = true;
