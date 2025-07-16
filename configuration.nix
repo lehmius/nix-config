@@ -58,7 +58,8 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
   };
-
+  
+  nix.settings.allowed-users = [ "lehmius" ];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Allow unfree packages
