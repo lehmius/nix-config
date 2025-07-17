@@ -2,8 +2,10 @@
 
 {
   imports = [
-  	home/lehmius/common/core/bash.nix
-	home/lehmius/common/core/ghostty.nix
+  	/common/core/bash.nix
+	/common/core/ghostty.nix
+
+	/common/optional/desktop
   ];
 
   home.username = "lehmius";
