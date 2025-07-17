@@ -2,8 +2,8 @@
 
 {
   imports = [
-    ./user/shell/bash.nix
-    ./user/app/terminal/ghostty.nix
+  	home/lehmius/common/core/bash.nix
+	home/lehmius/common/core/ghostty.nix
   ];
 
   home.username = "lehmius";
